@@ -11,9 +11,9 @@ const NonAuthLayout = ({ children, isAuthenticated }: IProps) => {
   if (isAuthenticated) return <Navigate to={RoutePaths.HOME} />;
 
   return (
-    <>
+    <div style={{ backgroundImage: `url("src/assets/images/bg-non-auth.png")` }}>
       {children} <Outlet />
-    </>
+    </div>
   );
 };
 
